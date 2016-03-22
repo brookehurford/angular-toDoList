@@ -1,5 +1,12 @@
 h1 {
-  color: blue;
+  color: tomato;
+}
+
+.dropdown {
+  -webkit-appearance: none;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: 15px;
 }
 
 .selected {

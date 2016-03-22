@@ -8,7 +8,7 @@ import { Task } from './task.model';
   <div class="task-form">
     <h3>Create Task:</h3>
     <input placeholder="Description" class="col-sm-8 input-lg" #newDescription>
-    <select #userPriority>
+    <select class="dropdown" #userPriority>
       <option value="| Low Priority" selected="selected">Low</option>
       <option value="| Normal Priority">Normal</option>
       <option value="| High Priority">High</option>
