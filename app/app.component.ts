@@ -7,7 +7,7 @@ import { Component } from 'angular2/core';
   template: `
   <div class="container">
     <h1>To-Do List</h1>
-    <h3> *ngFor="#task of tasks">{{ task.description }}</h3>
+    <h3 *ngFor="#task of tasks">{{ task.description }}</h3>
   </div>
   `
 })
@@ -16,7 +16,7 @@ import { Component } from 'angular2/core';
 export class AppComponent {
   public task: Task[]; // Task [] (or Array<Task>) identifies tasks as an array of Task objects
   constructor(){
-    this.task = [
+    this.tasks = [
       new Task("Create To-Do List app", 0);
       new Task("Learn Kung Fu.", 1);
       new Task("Rewatch all the Lord of the Rings movies", 2);
