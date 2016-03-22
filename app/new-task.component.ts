@@ -13,7 +13,7 @@ import { Task } from './task.model';
       <option value="| Normal Priority">Normal</option>
       <option value="| High Priority">High</option>
     </select>
-    <button (click)="addTask(newDescription, userPriority)" class="btn-info btn-lg add-button">Add</button>
+    <button (click)="addTask(newDescription, userPriority)" class="btn add-button">Add</button>
   </div>
   `
 })
