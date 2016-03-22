@@ -15,7 +15,7 @@ export class DonePipe implements PipeTransform {
       });
     } else if (desiredDoneState === "notDone") {
       return input.filter((task) => {
-        return task.done;
+        return !task.done;
       });
     } else {
       return input;

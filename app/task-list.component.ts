@@ -36,6 +36,6 @@ export class TaskListComponent {
   }
   onChange(filterOption) {
     this.filterDone = filterOption;
-    console.log(this.filterDone);
+    // console.log(this.filterDone);
   }
 }
