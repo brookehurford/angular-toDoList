@@ -9,6 +9,7 @@ h1 {
 .task-form {
   margin-top: 80px;
   margin-bottom: 80px;
+  overflow: auto;
 }
 
 .add-button {
@@ -16,4 +17,9 @@ h1 {
   margin-left: 10px;
   padding-top: 8px;
   padding-bottom: 8px;
+}
+
+.filter {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
