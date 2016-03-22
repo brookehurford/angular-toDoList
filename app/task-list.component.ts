@@ -25,17 +25,17 @@ export class TaskListComponent {
     this.onTaskSelect = new EventEmitter();
   }
   taskClicked(clickedTask: Task): void {
-    console.log(clickedTask 'child');
+    console.log(clickedTask, 'child');
     this.selectedTask = clickedTask;
     this.onTaskSelect.emit(clickedTask);
   }
-  createTask(description: string): void {
+  createTask(newTaskInfo): void {
+    console.log(newTaskInfo);
     this.taskList.push(
-      new Task(description, this.taskList.length)
+      new Task(newTaskInfo[0], newTaskInfo[1], this.taskList.length)
     );
   }
   onChange(filterOption) {
     this.filterDone = filterOption;
-    // console.log(this.filterDone);
   }
 }

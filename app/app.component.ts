@@ -17,16 +17,16 @@ import { Task } from './task.model';
 
 // Stores instances of Model in a component.
 export class AppComponent {
-  public task: Task[]; // Task [] (or Array<Task>) identifies tasks as an array of Task objects
+  public tasks: Task[]; // Task [] (or Array<Task>) identifies tasks as an array of Task objects
   constructor(){
     this.tasks = [
-      new Task("Create To-Do List app", 0);
-      new Task("Learn Kung Fu.", 1);
-      new Task("Rewatch all the Lord of the Rings movies", 2);
-      new Task("Do the laundry", 3);
+      new Task("Create To-Do List app", "| High Priority", 0),
+      new Task("Learn Kung Fu.", "| Low Priority", 1),
+      new Task("Rewatch all the Lord of the Rings movies", "| Normal Priority", 2),
+      new Task("Do the laundry", "| High Priority", 3)
     ];
   }
   taskWasSelected(clickedTask: Task): void {
-    console.log(clickedTask 'parent');
+    console.log(clickedTask, 'parent');
   }
 }
