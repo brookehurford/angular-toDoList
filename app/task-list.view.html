@@ -1,0 +1,6 @@
+<!--This could go back into the task-list.component.ts file because it's so simple, but is an example of how to have templates in a separate .view.html file-->
+<task-display *ngFor="#currentTask of taskList"
+  (click)="taskClicked(currentTask)"
+  [class.selected]="currentTask === selectedTask"
+  [task]="currentTask">
+</task-display>

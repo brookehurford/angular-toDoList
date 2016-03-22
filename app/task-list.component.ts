@@ -8,13 +8,7 @@ import { Task } from './task.model';
   inputs: ['taskList'], // 'taskList' array is used again below in directive.
   outputs: ['onTaskSelect'], // output to create custom event-emitter
   directives: [TaskComponent],
-  template: `
-  <task-display *ngFor="#currentTask of taskList"
-    (click)="taskClicked(currentTask)"
-    [class.selected]="currentTask === selectedTask"
-    [task]="currentTask">
-  </task-display>
-  `
+  templateUrl: 'app/task-list.view.html'
 })
 
 // Child component constructor of AppComponent with click event emitter.
